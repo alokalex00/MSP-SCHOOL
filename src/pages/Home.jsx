@@ -13,7 +13,7 @@ import hero from "../assets/school-campus.jpeg";
 import science from "../assets/composite-lab.png";
 import library from "../assets/library.png";
 import playground from "../assets/playground-area.png";
-import principal from "../assets/principal.jpeg";
+import principal from "../assets/Principal.jpeg";
 
 
 export default function Home() {
