@@ -1,0 +1,155 @@
+@import "tailwindcss";
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  background: #f7f4ed;
+  color: #07182e;
+  font-family: "Inter", sans-serif;
+  overflow-x: hidden;
+}
+
+h1,
+h2,
+h3 {
+  font-family: "Playfair Display", serif;
+}
+
+button,
+a {
+  -webkit-tap-highlight-color: transparent;
+}
+
+img {
+  display: block;
+}
+
+.page-section {
+  padding: 5rem 1.5rem;
+  background: #fff;
+}
+
+.page-grid {
+  max-width: 80rem;
+  margin: auto;
+  display: grid;
+  gap: 3rem;
+  align-items: center;
+}
+
+.eyebrow {
+  color: #9b752e;
+  font-size: 0.65rem;
+  letter-spacing: 0.25rem;
+  font-weight: 700;
+}
+
+.section-title {
+  font-size: clamp(2.3rem, 5vw, 4.5rem);
+  line-height: 1.05;
+}
+
+.gold {
+  color: #a37b31;
+}
+
+.body-text {
+  color: #64748b;
+  line-height: 1.8;
+}
+
+.text-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.6rem;
+  font-weight: 600;
+}
+
+.content-image {
+  width: 100%;
+  aspect-ratio: 16 / 10;
+  object-fit: cover;
+}
+
+.gallery-preview {
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+}
+
+.footer-title {
+  color: #d8b35c;
+  font-size: 0.7rem;
+  letter-spacing: 0.2rem;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.footer-links {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+  margin-top: 1.3rem;
+  color: rgb(255 255 255 / 0.55);
+}
+
+.footer-links a {
+  transition: 0.25s;
+}
+
+.footer-links a:hover {
+  color: white;
+}
+
+@media (min-width: 768px) {
+  .page-section {
+    padding: 7rem 2rem;
+  }
+
+  .page-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+
+::selection {
+  background: #d8b35c;
+  color: #07182e;
+}
+
+a,
+button {
+  cursor: pointer;
+}
+
+button {
+  font: inherit;
+}
+
+@media (max-width: 640px) {
+  .page-section {
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+  }
+
+  .section-title {
+    letter-spacing: -1px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    scroll-behavior: auto !important;
+    animation-duration: 0.01ms !important;
+    transition-duration: 0.01ms !important;
+  }
+}
